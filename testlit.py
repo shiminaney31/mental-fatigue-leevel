@@ -10,7 +10,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 
 # Load dataset and encoder
-df = pd.read_csv(r'C:\Users\HP\mental_fatigue_data.csv')
+df = pd.read_csv('mental_fatigue_data.csv')
 with open('workload_encoder.pkl', 'rb') as f:
     workload_encoder = pickle.load(f)
 
